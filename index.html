@@ -90,11 +90,11 @@
 						================ -->
 						<div id="logo">
 							<!-- logo images for big screens -->
-							<a href="index.html" class="logo-dark"><img src="assets/img/logo-dark.png" alt="logo"></a>
+							<a href="index.html" class="logo-sphere"><img src="assets/img/logo-sphere.png" alt="logo"></a>
 							<a href="index.html" class="logo-light"><img src="assets/img/logo-light.png" alt="logo"></a>
 
 							<!-- logo images for smaller screens -->
-							<a href="index.html" class="logo-dark-m"><img src="assets/img/logo-dark-m.png" alt="logo"></a>
+							
 							<a href="index.html" class="logo-light-m"><img src="assets/img/logo-light-m.png" alt="logo"></a>
 						</div>
 						<!-- End logo -->
@@ -165,9 +165,9 @@
 											<li class="has-children active">
 												<a href="#0">Home</a> 
 												<ul class="tt-ol-sub-menu">
-													<li class="active"><a href="home-landing-1.html">Home v.1</a></li>
+													<li><a href="home-landing-1.html">Home v.1</a></li>
 													<li><a href="home-landing-2.html">Home v.2</a></li>
-													<li><a href="home-landing-3.html">Home v.3</a></li>
+													<li class="active"><a href="home-landing-3.html">Home v.3</a></li>
 												</ul>
 											</li>
 
@@ -293,220 +293,89 @@
 				<!-- End header -->
 
 
-				<!-- ====== HERO TITLE & BUTTON (выше слайдера) ====== -->
-				<div class="main-hero-title-wrap" style="width:100%;text-align:center;margin-top:40px;">
-					<h1 class="hesl-caption-title" style="font-size:3rem;font-weight:900;">Лучший салон по заплетению дред на Бали от лучших мастеров!</h1>
-					<div style="margin-top:32px;">
-						<a href="#booking" class="btn btn-primary btn-lg">Бронирование</a>
-					</div>
-				</div>
-
-
 				<!-- ========================
-				///// Begin hero slider /////
-				============================= -->
-				<div class="tt-hero-slider" style="margin-top:33vh;">
-					<div class="hero-slider-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes can be found in the file "helper.css". -->
+				///// Begin page header /////
+				=============================
+				* Use classes "ph-xs", "ph-sm", "ph-lg", "ph-xlg", "ph-full" or "ph-almost-full" to set page header size.
+				* Use classes "ph-full-m" or "ph-almost-full-m" to set page header full height or almost full height size for small screens.
+				* Use class "ph-center" or "ph-right" to align page header caption.
+				* Use class "bg-dark", "bg-gray-3" or "bg-main" to set page header background color. More info about prepared background classes can be found in the file "helper.css".
+				-->
+				<div id="page-header" class="ph-almost-full bg-yellow-3">
 
-						<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
-						===========================================================================
-						* Use class "nav-hover" to show navigation on hover.
-						* Use class "nav-outside" to enable outside nav (requires boxed layout).
-						* Use class "nav-outside-top" to enable outside top nav (requires enough space at the top of the carousel).
-						* Use class "nav-bottom-right" to enable bottom right nav.
-						* Use class "nav-rounded" to enable rounded nav (no effect if "nav-minimal" is enabled).
-						* Use class "nav-light" to enable nav light style.
-						* Use class "nav-dark" to enable nav dark style.
-						* Use class "nav-minimal" to enable nav minimal style.
-						* Use class "dots-outside" to enable outside dots (requires enough space at the bottom of the carousel).
-						* Use class "dots-left", "dots-right" or "dots-center-right" to align dots.
-						* Use class "dots-rounded" to enable rounded dots.
-						* Use class "owl-mousewheel" to enable mousewheel support.
-						* Use class "cursor-grab" to enable cursor grab icon (no effect on links!).
-						* Use class "cc-hover-zoom" to enable carousel items hover zoom effect (for "cc-image" only!).
-						* Use class "owl-size-1" ... up to "owl-size-20" to set carousel height (effect only if "cc-image" contain class "bg-image"!).
-						* Use class "owl-size-almost-full" to set carousel almost full height size for desktop (effect only if "cc-image" contain class "bg-image"!).
-						* Use class "owl-size-full" to set carousel full height size for desktop (effect only if "cc-image" contain class "bg-image"!).
-						* Use class "owl-size-almost-full-m" to set carousel almost full height size for small screens (effect only if "cc-image" contain class "bg-image"!).
-						* Use class "owl-size-full-m" to set carousel full height size for small screens (effect only if "cc-image" contain class "bg-image"!).
-						===========================================================================
-						* Available carousel data attributes:
-								data-items="4".......................(items visible on desktop)
-								data-tablet-landscape="4"............(items visible on mobiles)
-								data-tablet-portrait="3".............(items visible on mobiles)
-								data-mobile-landscape="2"............(items visible on tablets)
-								data-mobile-portrait="1".............(items visible on tablets)
-								data-loop="true".....................(true/false)
-								data-center="true"...................(true/false)
-								data-margin="10".....................(space between items)
-								data-start-position="0"..............(item start position)
-								data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
-								data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
-								data-mouse-drag="false"..............(true/false)
-								data-touch-drag="false"..............(true/false)
-								data-autoheight="true"...............(true/false)
-								data-autoplay="true".................(true/false)
-								data-autoplay-timeout="5000".........(milliseconds)
-								data-autoplay-hover-pause="true".....(true/false)
-								data-autoplay-speed="800"............(milliseconds)
-								data-drag-end-speed="800"............(milliseconds)
-								data-nav="true"......................(true/false)
-								data-nav-speed="800".................(milliseconds)
-								data-dots="false"....................(true/false)
-								data-dots-speed="800"................(milliseconds)
+					<!-- Begin page header image 
+					============================= 
+					* Use class "cover-opacity-*" to set image cover opasity. Example: "cover-opacity-3" or "cover-opacity-3-5" ... up to "cover-opacity-9-5".
+					* Use class "parallax-1" up to "parallax-8" to enable image parallax effect (use class "no-parallax-m" to disable on mobile devices).
+					* You can change the "background-position" as needed (depends on your image).
+					* Use class "tt-move-bg" to enable background moving effect.
+					-->
+					<!-- <div class="page-header-image tt-move-bg parallax-6 bg-image" style="background-image: url(assets/img/page-header/page-header-2.jpg); background-position: 50% 50%;"></div> -->
+					<!-- End page header image -->
+
+					<!-- Begin page header inner -->
+					<div class="page-header-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes can be found in the file "helper.css". -->
+
+						<!-- Begin page header caption 
+						===============================
+						* Use class "ph-cap-xs", "ph-cap-sm", "ph-cap-lg" "ph-cap-xlg" or ph-cap-xxlg to set caption size.
+						* Use class "ph-cap-light" to enable caption light color style (useful if you use dark background images).
+						* Use class "ph-cap-alter" to enable caption alternative style (useful if you want highlight caption).
+						* Use class "parallax-1" up to "parallax-6" to enable parallax effect (use class "no-parallax-m" to disable on mobile devices).
+						* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scrolls (use class "no-fade-out-scroll-m" to disable on mobile devices).
 						-->
-						<div class="owl-carousel owl-size-almost-full owl-size-almost-full-m cursor-grab nav-hover nav-minimal" data-lazy-load="true" data-items="1" data-loop="true" data-nav="true" data-nav-speed="600" data-dots="false" data-autoplay="true" data-autoplay-timeout="8000" data-autoplay-speed="800" data-autoplay-hover-pause="true">
+						<div class="page-header-caption ph-cap-lg parallax-5">
 
-							<!-- Begin carousel item (заменённый) -->
-							<div class="cc-item">
-								<div class="cc-image tt-move-bg parallax-6 bg-image owl-lazy" data-src="assets/img/hero/hero-3.jpg"></div>
-								<!-- hero-slider-caption-wrap и содержимое с надписью и кнопкой можно удалить или оставить пустым, чтобы не дублировать -->
+							<!-- Use helper class "max-width-*" if needed. For example: "max-width-900". More info about helper classes can be found in the file "helper.css". -->
+							<div class="ph-title-wrap max-width-1600">
+								<h1 class="page-header-title">Дреды от лучших мастеров преобразят тебя! Рил</h1>
 							</div>
-							<!-- End carousel item -->
 
-							<!-- Begin carousel item 
-							========================= -->
-							<div class="cc-item">
+							<!-- Use helper class "max-width-*" if needed. For example: "max-width-900". More info about helper classes can be found in the file "helper.css". -->
+							<div class="ph-subtitle-wrap max-width-1600 margin-top-25">
+								<h2 class="page-header-subtitle">Сделай шаг навстречу переменам на волшебном острове Бали</h2>
+							</div>
 
-								<!-- Begin hero slider image
-								=============================
-								* Use class "cover-opacity-*" to set image cover opasity. Example: "cover-opacity-3" or "cover-opacity-3-5" ... up to "cover-opacity-9-5". 
-								* Use class "parallax-1" up to "parallax-6" to enable parallax effect (use class "no-parallax-m" to disable on mobile devices).
-								* Use class "tt-move-bg" to enable background moving effect. 
-								-->
-								<div class="cc-image tt-move-bg parallax-6 bg-image owl-lazy" data-src="assets/img/hero/hero-1.jpg"></div>
-								<!-- End hero slider image -->
+							<!-- Page header caption divider -->
+							<div class="ph-caption-divider"></div>
 
-								<!-- Begin hero slider caption
-								===============================
-								* Use class "hesl-cap-xs", "hesl-cap-sm", "hesl-cap-lg" "hesl-cap-xlg" or hesl-cap-xxlg to set caption size.
-								* Use class "hesl-cap-center" or "hesl-cap-right" to align page header caption.
-								* Use class "hesl-cap-light" to enable caption light color style (useful if you use dark background images).
-								* Use class "hesl-cap-alter" to enable caption alternative style (useful if you want highlight caption).
-								* Use class "parallax-1" up to "parallax-6" to enable parallax effect (use class "no-parallax-m" to disable on mobile devices).
-								* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scrolls (use class "no-fade-out-scroll-m" to disable on mobile devices).
-								-->
-								<div class="hero-slider-caption-wrap parallax-5">
-									<div class="hero-slider-caption-holder">
-										<div class="hero-slider-caption">
-											
-											<!-- Use helper class "max-width-*" if needed. For example: "max-width-900". More info about helper classes can be found in the file "helper.css". -->
-											<div class="hesl-caption-title-wrap max-width-900">
-												<h1 class="hesl-caption-title">Sensual</h1>
-											</div>
+							<!-- Page header caption category -->
+							<!-- <div class="page-header-category">
+								<span><a href="">Lifestyle</a></span>
+								<span>Lifestyle</span>
+							</div> -->
 
-											<!-- Use helper class "max-width-*" if needed. For example: "max-width-900". More info about helper classes can be found in the file "helper.css". -->
-											<div class="hesl-caption-subtitle-wrap max-width-900">
-												<h2 class="hesl-caption-subtitle">You Feel It</h2>
-											</div>
-
-											<!-- Hero slider caption divider -->
-											<div class="hesl-caption-divider"></div>
-
-											<!-- Hero slider caption category (use </a> or </span> as needed) -->
-											<!-- <div class="hesl-caption-category">
-												<span>Lifestyle</span>, <span href="">Branding</span>
-												<a href="">Lifestyle</a>, <a href="">Branding</a>
-											</div> -->
-
-											<!-- Begin hero slider caption description (recommended max 170 characters!) 
-											===========================================
-											* Use helper class "max-width-*" if needed. For example: "max-width-750". More info about helper classes can be found in the file "helper.css".
-											-->
-											<!-- <div class="hesl-caption-description-wrap max-width-800">
-												<div class="hesl-caption-description">
-													Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget gravida.
-												</div>
-											</div> -->
-											<!-- End page header description -->
-
-											<!-- <div><a href="https://wrapbootstrap.com/user/Themetorium" class="btn btn-dark btn-sm margin-top-30" target="_blank">Buy This Template</a></div> -->
-
-										</div> <!-- /.hero-slider-caption -->
-									</div> <!-- /.hero-slider-caption-holder -->
+							<!-- Begin page header description (recommended max 170 characters!) 
+							===================================
+							* Use helper class "max-width-*" if needed. For example: "max-width-750". More info about helper classes can be found in the file "helper.css".
+							-->
+							<!-- <div class="page-header-description-wrap max-width-800">
+								<div class="page-header-description">
+									Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget gravida.
 								</div>
-								<!-- End hero slider caption -->
+							</div> -->
+							<!-- End page header description -->
 
-							</div>
-							<!-- End carousel item -->
-
-							<!-- Begin carousel item 
-							========================= -->
-							<div class="cc-item">
-
-								<!-- Begin hero slider image
-								=============================
-								* Use class "cover-opacity-*" to set image cover opasity. Example: "cover-opacity-3" or "cover-opacity-3-5" ... up to "cover-opacity-9-5". 
-								* Use class "parallax-1" up to "parallax-6" to enable parallax effect (use class "no-parallax-m" to disable on mobile devices).
-								* Use class "tt-move-bg" to enable background moving effect. 
-								-->
-								<div class="cc-image tt-move-bg parallax-6 bg-image owl-lazy" data-src="assets/img/hero/hero-2.jpg"></div>
-								<!-- End hero slider image -->
-
-								<!-- Begin hero slider caption
-								===============================
-								* Use class "hesl-cap-xs", "hesl-cap-sm", "hesl-cap-lg" "hesl-cap-xlg" or hesl-cap-xxlg to set caption size.
-								* Use class "hesl-cap-center" or "hesl-cap-right" to align page header caption.
-								* Use class "hesl-cap-light" to enable caption light color style (useful if you use dark background images).
-								* Use class "hesl-cap-alter" to enable caption alternative style (useful if you want highlight caption).
-								* Use class "parallax-1" up to "parallax-6" to enable parallax effect (use class "no-parallax-m" to disable on mobile devices).
-								* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scrolls (use class "no-fade-out-scroll-m" to disable on mobile devices).
-								-->
-								<div class="hero-slider-caption-wrap parallax-5">
-									<div class="hero-slider-caption-holder">
-										<div class="hero-slider-caption">
-											
-											<!-- Use helper class "max-width-*" if needed. For example: "max-width-900". More info about helper classes can be found in the file "helper.css". -->
-											<div class="hesl-caption-title-wrap max-width-900">
-												<h1 class="hesl-caption-title">Mystical</h1>
-											</div>
-
-											<!-- Use helper class "max-width-*" if needed. For example: "max-width-900". More info about helper classes can be found in the file "helper.css". -->
-											<div class="hesl-caption-subtitle-wrap max-width-900">
-												<h2 class="hesl-caption-subtitle">Enjoy The Difference</h2>
-											</div>
-
-											<!-- Hero slider caption divider -->
-											<div class="hesl-caption-divider"></div>
-
-											<!-- Hero slider caption category (use </a> or </span> as needed) -->
-											<!-- <div class="hesl-caption-category">
-												<span>Lifestyle</span>, <span href="">Branding</span>
-												<a href="">Lifestyle</a>, <a href="">Branding</a>
-											</div> -->
-
-											<!-- Begin hero slider caption description (recommended max 170 characters!) 
-											===========================================
-											* Use helper class "max-width-*" if needed. For example: "max-width-750". More info about helper classes can be found in the file "helper.css".
-											-->
-											<!-- <div class="hesl-caption-description-wrap max-width-800">
-												<div class="hesl-caption-description">
-													Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget gravida.
-												</div>
-											</div> -->
-											<!-- End page header description -->
-
-											<!-- <div><a href="https://wrapbootstrap.com/user/Themetorium" class="btn btn-dark btn-sm margin-top-30" target="_blank">Buy This Template</a></div> -->
-
-										</div> <!-- /.hero-slider-caption -->
-									</div> <!-- /.hero-slider-caption-holder -->
-								</div>
-								<!-- End hero slider caption -->
-
-							</div>
-							<!-- End carousel item -->
+							<!-- <div><a href="" class="btn btn-dark btn-sm margin-top-30">Explore More</a></div> -->
 
 						</div>
-						<!-- End content carousel -->
+						<!-- End page header caption -->
 
-					</div> <!-- /.hero-slider-inner -->
-				</div>
-				<!-- End hero slider -->
+					</div> 
+					<!-- End page header inner -->
+					
 
-				<!-- Перемещённый логотип -->
-				<div class="main-logo-below-hero" style="text-align:center;margin:40px 0;">
-					<a href="index.html" class="logo-dark"><img src="assets/img/logo-dark.png" alt="logo" style="height:60px;"></a>
+					<!-- Begin page header scroll down button
+					==========================================
+					* Note: displayed only if #page-header contains class "ph-full"!!!
+					-->
+					<div class="ph-scroll-down parallax-3">
+						<a href="#page-content" class="ph-scroll-down-btn sm-scroll" title="Scroll down"></a>
+					</div>
+					<!-- End page header scroll down button -->
+
 				</div>
+				<!-- End page header -->
 
 
 				<!-- *************************************
@@ -531,7 +400,7 @@
 							* Use class "pgi-caption-bottom" to enable caption position bottom.
 							* Note: Remove position class to enable caption default position.
 							-->
-							<div class="portfolio-grid pgi-cover-dark pgi-caption-top pgi-image-zoom">
+							<div class="portfolio-grid pgi-cover-dark">
 
 								<!-- Begin isotope
 								===================
@@ -552,7 +421,7 @@
 										========================== 
 										* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 										-->
-										<div class="isotope-item branding print iso-height-2">
+										<div class="isotope-item branding print iso-height-1">
 
 											<!-- Begin portfolio grid item 
 											=============================== -->
@@ -564,7 +433,7 @@
 												<!-- Begin portfolio grid item caption -->
 												<div class="pgi-caption-wrap">
 													<div class="pgi-caption">
-														<h2 class="pgi-caption-title" style="font-family: 'Lato', Arial, sans-serif; font-weight: 900; font-size: 48px; line-height: 1.2; margin: 0; padding: 0; letter-spacing: normal; box-sizing: border-box;">Hey, Sexy!</h2>
+														<h2 class="pgi-caption-title">Hey, Sexy!</h2>
 														<div class="pgi-caption-divider"></div>
 														<div class="pgi-caption-category"><span>Branding</span><span>Print</span></div>
 													</div>
@@ -593,7 +462,7 @@
 												<!-- Begin portfolio grid item caption -->
 												<div class="pgi-caption-wrap">
 													<div class="pgi-caption">
-														<h2 class="pgi-caption-title" style="font-family: 'Lato', Arial, sans-serif; font-weight: 900; font-size: 48px; line-height: 1.2; margin: 0; padding: 0; letter-spacing: normal; box-sizing: border-box;">Hot Lips</h2>
+														<h2 class="pgi-caption-title">Hot Lips</h2>
 														<div class="pgi-caption-divider"></div>
 														<div class="pgi-caption-category"><span>Branding</span><span>Digital</span></div>
 													</div>
@@ -622,7 +491,7 @@
 												<!-- Begin portfolio grid item caption -->
 												<div class="pgi-caption-wrap">
 													<div class="pgi-caption">
-														<h2 class="pgi-caption-title" style="font-family: 'Lato', Arial, sans-serif; font-weight: 900; font-size: 48px; line-height: 1.2; margin: 0; padding: 0; letter-spacing: normal; box-sizing: border-box;">Boots for Girls</h2>
+														<h2 class="pgi-caption-title">Boots for Girls</h2>
 														<div class="pgi-caption-divider"></div>
 														<div class="pgi-caption-category"><span>Print</span></div>
 													</div>
@@ -651,7 +520,7 @@
 												<!-- Begin portfolio grid item caption -->
 												<div class="pgi-caption-wrap">
 													<div class="pgi-caption">
-														<h2 class="pgi-caption-title" style="font-family: 'Lato', Arial, sans-serif; font-weight: 900; font-size: 48px; line-height: 1.2; margin: 0; padding: 0; letter-spacing: normal; box-sizing: border-box;">Black or White</h2>
+														<h2 class="pgi-caption-title">Black or White</h2>
 														<div class="pgi-caption-divider"></div>
 														<div class="pgi-caption-category"><span>Digital</span></div>
 													</div>
@@ -668,7 +537,7 @@
 										========================== 
 										* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 										-->
-										<div class="isotope-item print iso-height-2">
+										<div class="isotope-item print iso-height-1">
 
 											<!-- Begin portfolio grid item 
 											=============================== -->
@@ -680,7 +549,7 @@
 												<!-- Begin portfolio grid item caption -->
 												<div class="pgi-caption-wrap">
 													<div class="pgi-caption">
-														<h2 class="pgi-caption-title" style="font-family: 'Lato', Arial, sans-serif; font-weight: 900; font-size: 48px; line-height: 1.2; margin: 0; padding: 0; letter-spacing: normal; box-sizing: border-box;">Golden Boy</h2>
+														<h2 class="pgi-caption-title">Golden Boy</h2>
 														<div class="pgi-caption-divider"></div>
 														<div class="pgi-caption-category"><span>Print</span></div>
 													</div>
@@ -709,7 +578,7 @@
 												<!-- Begin portfolio grid item caption -->
 												<div class="pgi-caption-wrap">
 													<div class="pgi-caption">
-														<h2 class="pgi-caption-title" style="font-family: 'Lato', Arial, sans-serif; font-weight: 900; font-size: 48px; line-height: 1.2; margin: 0; padding: 0; letter-spacing: normal; box-sizing: border-box;">Balance</h2>
+														<h2 class="pgi-caption-title">Balance</h2>
 														<div class="pgi-caption-divider"></div>
 														<div class="pgi-caption-category"><span>Branding</span><span>Print</span></div>
 													</div>
@@ -769,11 +638,11 @@
 					<div class="footer-block">
 						<div class="f-block-logo">
 							<!-- logo images for big screens -->
-							<a href="index.html" class="footer-logo logo-dark"><img src="assets/img/logo-dark.png" alt="logo"></a>
+							<a href="index.html" class="footer-logo logo-sphere"><img src="assets/img/logo-sphere.png" alt="logo"></a>
 							<a href="index.html" class="footer-logo logo-light"><img src="assets/img/logo-light.png" alt="logo"></a>
 
 							<!-- logo images for smaller screens -->
-							<a href="index.html" class="footer-logo logo-dark-m"><img src="assets/img/logo-dark-m.png" alt="logo"></a>
+							
 							<a href="index.html" class="footer-logo logo-light-m"><img src="assets/img/logo-light-m.png" alt="logo"></a>
 						</div>
 					</div>
@@ -809,8 +678,8 @@
 					<!-- Begin footer block (copyright) -->
 					<div class="footer-block">
 						<div class="footer-simple-copyright">
-							<p>© Waal / All rights reserved</p>
-							<p>Design by: <a href="https://themetorium.net" target="_blank">Themetorium</a></p>
+							<p>sprkyai / All rights reserved</p>
+							<p>Design by: <a>thomas_dev</a></p>
 						</div>
 					</div>
 					<!-- End footer block -->
