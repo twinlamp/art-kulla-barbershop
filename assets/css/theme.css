@@ -2392,9 +2392,6 @@ body.tt-ol-menu-open .tt-ol-menu-body-cover {
 .page-header-caption.ph-cap-lg .ph-subtitle-wrap {
 	margin-top: 20px;
 }
-.page-header-caption.ph-cap-lg .page-header-subtitle {
-	font-size: 20px;
-}
 .page-header-caption.ph-cap-lg .page-header-category span, 
 .page-header-caption.ph-cap-lg .page-header-category a {
 }
@@ -4892,7 +4889,7 @@ img.pgi-image {
 	background-color: #000;
 }
 .portfolio-grid.pgi-cover-dark .portfolio-grid-item:hover::before {
-	opacity: .85;
+	opacity: .1;
 }
 .portfolio-grid.pgi-cover-dark .pgi-caption-title,
 .portfolio-grid.pgi-cover-dark .pgi-caption-category span {
@@ -5374,7 +5371,7 @@ a.tt-gallery-image-wrap::before {
 
 /* tt-gallery image hover cover dark */
 .ttg-hover-dark a.tt-gallery-image-wrap:hover::before {
-	opacity: .6;
+	opacity: .05;
 	visibility: visible;
 	background-color: #000;
 }
