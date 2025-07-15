@@ -2241,11 +2241,12 @@ body.tt-ol-menu-open .tt-ol-menu-body-cover {
 }
 .page-header-title {
 	margin: 0;
-	font-family: 'Playfair Display', serif;
-	font-size: 34px;
+	font-family: "Roboto Slab", serif;
+	font-optical-sizing: auto;
 	font-weight: bold;
 	font-weight: 700;
-	font-style: italic;
+	font-style: normal;
+	
 	color: #000;
 	letter-spacing: 1px;
 }
@@ -2387,7 +2388,7 @@ body.tt-ol-menu-open .tt-ol-menu-body-cover {
 
 /* caption sizes lg */
 .page-header-caption.ph-cap-lg .page-header-title {
-	font-size: 42px;
+	font-size: 100px;
 }
 .page-header-caption.ph-cap-lg .ph-subtitle-wrap {
 	margin-top: 20px;
