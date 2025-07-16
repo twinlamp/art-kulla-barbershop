@@ -36,6 +36,8 @@
  *  Various classes
 /* ------------------------------------------------------------- */
 
+
+
 /* clear */
 .clear { clear: both !important; display: block !important; }
 .clear::after {
@@ -106,7 +108,7 @@
 }
 
 /* main menu button opacity */
-.btn.btn-light.btn-lg { opacity: 0.8; }
+.btn.btn-light.btn-lg { opacity: 0.6; }
 
 /* text transform */
 .text-uppercase { text-transform: uppercase !important; }
@@ -209,7 +211,7 @@
 
 .bg-image {
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 50% 15%;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
