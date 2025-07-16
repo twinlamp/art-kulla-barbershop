@@ -8,9 +8,45 @@
 * Template main color: #0fefd7
 * Links color: #08b396
 * Links hover color: #0ddeba
-* Font family (global): 'Lato', sans-serif;
+* Font family (global): 'PPRightGrotesk-TightMedium', 'ReSquare', sans-serif;
 * Font family (alter): 'Playfair Display', serif;
 -------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'PPRightGrotesk-TightMedium';
+  src: url('../vendor/fontawesome/webfonts/PPRightGrotesk-TightMedium.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ReSquare';
+  src: url('../vendor/fontawesome/css/ReSquare\ Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ReSquare';
+  src: url('../vendor/fontawesome/css/ReSquare\ Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ReSquare';
+  src: url('../vendor/fontawesome/css/ReSquare\ Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Zector';
+    src: url('../vendor/fontawesome/webfonts/Zector.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Класс для явного применения Zector */
+.font-zector {
+    font-family: 'Zector', 'Lato', 'Playfair Display', Arial, sans-serif;
+}
 
 
 /* Table of Content
@@ -76,17 +112,18 @@ html {
 html, body {
 	padding: 0;
 	margin: 0;
+	font-family: 'PPRightGrotesk-TightMedium', 'ReSquare', Arial, Helvetica, sans-serif;
 }
 body {
 	position: relative;
-	background-color: #FFF;
-	font-family: 'Lato', sans-serif;
+	background-color: #217745;
 	line-height: 1.6;
 	font-size: 18px;
 	font-weight: normal;
 	-webkit-font-smoothing: antialiased;
 	color: #333;
 	overflow-x: hidden;
+	font-family: 'PPRightGrotesk-TightMedium', 'ReSquare', Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -641,7 +678,8 @@ body.tt-m-menu-open #header.header-show-hide-on-scroll { /* disable hide/show he
 }
 
 #header.header-alt #tt-ol-menu-trigger {
-	background-color: #0fefd7;
+	
+	
 	margin-top: 0;
 	padding: 0 8px;
 }
@@ -652,12 +690,14 @@ body.tt-m-menu-open #header.header-show-hide-on-scroll { /* disable hide/show he
 #header.header-alt .tt-ol-menu-str .str-1, 
 #header.header-alt .tt-ol-menu-str .str-2, 
 #header.header-alt .tt-ol-menu-str .str-3 {
-	background-color: #000 !important;
+	background-color: #ffffff !important;
+	opacity: 0.8;
 }
 #header.header-alt #tt-ol-menu-trigger .tt-ol-menu-text {
 	height: 80px;
+	opacity: 0.9;
 	line-height: 80px;
-	color: #111 !important;
+	color: #ffffff !important;
 }
 
 #header.header-alt .header-attributes {
@@ -671,7 +711,7 @@ body.tt-m-menu-open #header.header-show-hide-on-scroll { /* disable hide/show he
 	padding: 0 !important;
 	line-height: 80px;
 	width: 70px;
-	background-color: #111;
+	
 	text-align: center;
 	color: #FFF !important;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -681,7 +721,7 @@ body.tt-m-menu-open #header.header-show-hide-on-scroll { /* disable hide/show he
 	transition: all 0.2s ease-in-out;
 }
 #header.header-alt .header-search-trigger:hover {
-	color: #0fefd7 !important;
+	color: #0fef5a !important;
 }
 
 @media (max-width: 991px) {
@@ -1062,7 +1102,7 @@ body.tt-ol-menu-open .tt-ol-menu-body-cover {
 	position: relative;
 	display: inline-block;
 	text-decoration: none;
-	font-family: 'Playfair Display',serif;
+	font-family: 'Zector',serif;
 	font-size: 36px;
 	font-weight: bold;
 	font-weight: 700;
@@ -2240,14 +2280,16 @@ body.tt-ol-menu-open .tt-ol-menu-body-cover {
 .ph-title-wrap {
 }
 .page-header-title {
-	margin: 0;
-	font-family: "Roboto Slab", serif;
+	margin: 0;	
+	color: rgba(255,255,255,0.7);
+	font-family: "PPRightGrotesk-TightMedium", serif;
 	font-optical-sizing: auto;
 	font-weight: bold;
 	font-weight: 700;
 	font-style: normal;
+	font-size: 150px !important;
 	
-	color: #000;
+	
 	letter-spacing: 1px;
 }
 @media (max-width: 991px) {
@@ -2267,9 +2309,9 @@ body.tt-ol-menu-open .tt-ol-menu-body-cover {
 }
 .page-header-subtitle {
 	margin: 0;
-	font-size: 17px;
+	font-size: 40px;
 	font-weight: normal;
-	color: #000;
+	color: rgba(255,255,255,0.7);
 }
 @media (max-width: 992px) {
 	.page-header-subtitle {
@@ -2331,12 +2373,7 @@ body.tt-ol-menu-open .tt-ol-menu-body-cover {
 }
 
 /* page header caption divider */
-.ph-caption-divider {
-	width: 35px;
-	height: 4px;
-	background-color: #0fefd7;
-	margin-top: 25px;
-}
+
 
 /* page header description */
 .page-header-description-wrap {
@@ -2376,9 +2413,6 @@ body.tt-ol-menu-open .tt-ol-menu-body-cover {
 .page-header-caption.ph-cap-sm .page-header-title {
 	font-size: 28px;
 }
-.page-header-caption.ph-cap-sm .page-header-subtitle {
-	font-size: 16px;
-}
 .page-header-caption.ph-cap-sm .page-header-category span, 
 .page-header-caption.ph-cap-sm .page-header-category a {
 	font-size: 16px;
@@ -2391,7 +2425,16 @@ body.tt-ol-menu-open .tt-ol-menu-body-cover {
 	font-size: 100px;
 }
 .page-header-caption.ph-cap-lg .ph-subtitle-wrap {
-	margin-top: 20px;
+	margin-top: 25px;
+}
+.page-header-caption.ph-cap-lg .page-header-title {
+	font-size: 48px;
+}
+.page-header-caption.ph-cap-lg .ph-subtitle-wrap {
+	margin-top: 25px;
+}
+.page-header-caption.ph-cap-lg .page-header-subtitle {
+	font-size: 40px;
 }
 .page-header-caption.ph-cap-lg .page-header-category span, 
 .page-header-caption.ph-cap-lg .page-header-category a {
@@ -2881,7 +2924,7 @@ body.tt-boxed .tt-wrap .tt-heading-inner {
 .tt-heading-title {
 	max-width: 920px;
 	margin: 0;
-	font-family: 'Playfair Display', serif;
+	font-family: 'PPRightGrotesk-TightMedium', serif;
 	font-size: 28px;
 	font-weight: bold;
 	font-weight: 700;
@@ -2965,7 +3008,7 @@ body.tt-boxed .tt-wrap .tt-heading-inner {
 	position: absolute;
 	top: 0;
 	left: 0;
-	font-family: 'Playfair Display', serif;
+	font-family: 'PPRightGrotesk-TightMedium', serif;
 	font-size: 15vw;
 	font-weight: 800;
 	color: #656565;
@@ -3225,7 +3268,7 @@ body.tt-boxed .tt-wrap .split-box-content.order-lg-last .split-box-content-inner
 	left: 2%;
 	bottom: auto;
 	line-height: 1;
-	font-family: 'Playfair Display', serif;
+	font-family: 'PPRightGrotesk-TightMedium', serif;
 	font-size: 20vw;
 	font-weight: bold;
 	color: #656565;
@@ -4735,10 +4778,10 @@ img.pgi-image {
 	width: 100%;
 	z-index: 2;
 	text-align: center;
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+	-moz-transform: translateY(-25%);
+	-ms-transform: translateY(-25%);
+	-webkit-transform: translateY(-25%);
+	transform: translateY(-25%);
 }
 .pgi-caption {
 	padding: 0 12%;
@@ -4777,7 +4820,7 @@ img.pgi-image {
 .pgi-caption-title {
 	margin: 0;
 	padding: 0;
-	font-family: 'Playfair Display',serif;
+	font-family: 'PPRightGrotesk-TightMedium',serif;
 	font-size: 25px;
 	font-weight: 700;
 	color: #111;
@@ -5183,7 +5226,7 @@ img.pci-image {
 	transform: scale(1);
 }
 .pci-caption-outside .pci-caption-title {
-	font-family: 'Playfair Display', serif;
+	font-family: 'PPRightGrotesk-TightMedium', serif;
 	font-size: 24px;
 	font-style: italic;
 	overflow: hidden;
@@ -5557,14 +5600,8 @@ a.tt-gallery-image-wrap::before {
 	margin: 0;
 	padding: 0;
 }
-.portfolio-info-list > ul > li {
-	position: relative;
-	max-width: 100%;
-	margin-bottom: 10px;
-}
-
 .portfolio-info-list .pi-list-heading {
-	font-family: 'Playfair Display', serif;
+	font-family: 'PPRightGrotesk-TightMedium', serif;
 	font-size: 19px;
 	font-weight: bold;
 	font-weight: 700;
@@ -6753,7 +6790,7 @@ body.lg-on {
 .tt-counter-up {
 	position: relative;
 	display: inline-block;
-	font-family: 'Playfair Display',serif;
+	font-family: 'PPRightGrotesk-TightMedium',serif;
 	font-size: 64px;
 	font-weight: normal;
 	line-height: normal;
@@ -6777,7 +6814,7 @@ body.lg-on {
 /* counter up title */
 .tt-counter-up-title {
 	margin: 30px 0 20px 0;
-	font-family: 'Playfair Display', serif;
+	font-family: 'PPRightGrotesk-TightMedium', serif;
 	font-size: 21px;
 }
 
@@ -7111,7 +7148,7 @@ body.lg-on {
 .bli-title, 
 .bli-title h2 {
 	margin: 0;
-	font-family: 'Playfair Display', serif;
+	font-family: 'PPRightGrotesk-TightMedium', serif;
 	font-weight: 700;
 	font-size: 28px;
 	color: #333;
@@ -7515,7 +7552,7 @@ body.tt-boxed .blog-single-inner.tt-wrap {
 }
 .blog-single-post-title {
 	margin: 0;
-	font-family: 'Playfair Display',serif;
+	font-family: 'PPRightGrotesk-TightMedium',serif;
 	font-size: 48px;
 	font-weight: bold;
 	color: #333;
@@ -8056,7 +8093,7 @@ img.sp-image {
 	border-top: 1px solid rgba(150, 150, 150, 0.2);
 }
 .related-posts-heading {
-	font-family: 'Playfair Display',serif;
+	font-family: 'PPRightGrotesk-TightMedium',serif;
 	font-size: 26px;
 	margin: 0 0 30px 0;
 }
@@ -8096,7 +8133,7 @@ img.sp-image {
 .related-posts-item .rp-item-title,
 .related-posts-item .rp-item-title a {
 	margin: 0;
-	font-family: 'Playfair Display',serif;
+	font-family: 'PPRightGrotesk-TightMedium',serif;
 	font-size: 20px;
 	color: #333;
 }
@@ -8413,7 +8450,7 @@ img.sp-image {
 .sidebar-heading {
 	position: relative;
 	margin-bottom: 50px;
-	font-family: 'Playfair Display',serif;
+	font-family: 'PPRightGrotesk-TightMedium',serif;
 	font-size: 24px;
 	font-weight: 700;
 }
@@ -8673,7 +8710,7 @@ a.blog-author-img:hover {
 }
 .sidebar-post-list .post-data .post-title {
 	margin: 0 0 5px 0;
-	font-family: 'Playfair Display',serif;
+	font-family: 'PPRightGrotesk-TightMedium',serif;
 	font-size: 16px;
 	font-weight: bold;
 	font-weight: 700;
@@ -11038,7 +11075,7 @@ blockquote p,
 
 .info-box-heading {
 	margin: 0 0 26px 0;
-	font-family: 'Playfair Display', serif;
+	font-family: 'PPRightGrotesk-TightMedium', serif;
 	font-size: 24px;
 	font-weight: 700;
 }
@@ -11395,7 +11432,7 @@ blockquote p,
 .sr-item-title {
 	max-width: 600px;
 	margin: 0;
-	font-family: 'Playfair Display', serif;
+	font-family: 'PPRightGrotesk-TightMedium', serif;
 	font-size: 34px;
 	color: #333;
 }
@@ -11479,6 +11516,7 @@ body.tt-boxed .footer-container.tt-wrap {
 .footer-block {
 	margin-bottom: 30px;
 	font-size: 16px;
+	font-family: 'Zector',serif;
 	overflow: hidden;
 }
 
