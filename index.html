@@ -337,7 +337,7 @@
 										<span class="d-block w-100 text-center">Бали</span>
 									</h1>
 								</div>
-								<a href="https://artkulla.trafft.com/?t=s&uuid=4f1b7d6d-5926-435e-8976-e920e8b0f051" class="btn btn-light btn-lg padding-left-50 padding-right-50 font-size-30" role="button" target="_blank" rel="noopener noreferrer">МЫ ЖДЕМ ТЕБЯ</a>
+								<a href="#0" class="btn btn-light btn-lg padding-left-50 padding-right-50 font-size-30" role="button" data-bs-toggle="modal" data-bs-target="#bookingModal">МЫ ЖДЕМ ТЕБЯ</a>
 							</div>
 							<!-- Page header caption divider -->
 							<div class="ph-caption-divider"></div>
@@ -692,3 +692,19 @@
 	</body>
 
 </html>
+
+<!-- Modal: Online Booking -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4" id="bookingModalLabel">Выбери удобное время</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="embedded-booking w-100" data-url="https://artkulla.trafft.com" data-query="&t=s&uuid=4f1b7d6d-5926-435e-8976-e920e8b0f051" data-lang="ru" data-autoresize="1" data-showsidebar="1"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://artkulla.trafft.com/embed.js" async></script>
