@@ -32,3 +32,8 @@
     height: auto !important;
     width: auto !important;
 }
+
+.animsition-loading {
+	width: 200px;
+	height: 200px;
+}
