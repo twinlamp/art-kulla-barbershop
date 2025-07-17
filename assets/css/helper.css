@@ -36,6 +36,8 @@
  *  Various classes
 /* ------------------------------------------------------------- */
 
+
+
 /* clear */
 .clear { clear: both !important; display: block !important; }
 .clear::after {
@@ -104,6 +106,9 @@
 	.text-left-to-xs { text-align: left !important; }
 	.text-right-to-xs { text-align: right !important; }
 }
+
+/* main menu button opacity */
+.btn.btn-light.btn-lg { opacity: 0.6; }
 
 /* text transform */
 .text-uppercase { text-transform: uppercase !important; }
@@ -206,7 +211,7 @@
 
 .bg-image {
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 50% 15%;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -236,7 +241,7 @@
 
 /* font alter */
 .font-alter { 
-	font-family: 'Playfair Display', serif !important;
+	font-family: 'Zector', sans-serif !important;
 }
 
 /* font styles */
@@ -776,7 +781,7 @@ a.link-pink:hover {
 .bg-dark-3 { background-color: #282828 !important; }
 .bg-dark-4 { background-color: #383838 !important; }
 
-.bg-green { background-color: #00ef68 !important; }
+.bg-green { background-color: #2f6145 !important; }
 .bg-green-2 { background-color: #91f8be !important; }
 .bg-green-3 { background-color: #e3f5eb !important; }
 

@@ -1,0 +1,34 @@
+/* Стили для модального окна онлайн-бронирования */
+#bookingModal .modal-content {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+#bookingModal .modal-header {
+    background: transparent;
+    border-bottom: none;
+}
+#bookingModal .modal-title {
+    color: #fff;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 32px;
+}
+#bookingModal .btn-close {
+    filter: invert(1);
+}
+
+.tt-ol-menu-list, .tt-ol-menu-list > li > a, .tt-ol-menu-list .tt-ol-sub-menu li > a {
+    font-family: 'Alumni Sans Pinstripe', sans-serif !important;
+    font-size: 32px !important;
+} 
+
+#header.header-alt #tt-ol-menu-trigger .tt-ol-menu-text {
+    font-family: 'Alumni Sans Pinstripe', sans-serif !important;
+    font-size: 26px !important;
+}
+
+#header #logo .logo-sphere img {
+    max-height: 120px !important;
+    height: auto !important;
+    width: auto !important;
+}
