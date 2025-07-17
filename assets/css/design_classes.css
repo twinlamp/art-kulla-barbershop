@@ -22,3 +22,7 @@
     font-size: 32px !important;
 } 
 
+#header.header-alt #tt-ol-menu-trigger .tt-ol-menu-text {
+    font-family: 'Alumni Sans Pinstripe', sans-serif !important;
+    font-size: 26px !important;
+}
