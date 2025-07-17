@@ -751,12 +751,13 @@ body.tt-m-menu-open #header.header-show-hide-on-scroll { /* disable hide/show he
 #logo {
 	position: relative;
 	display: inline-block;
-	margin-top: 21px;
+	margin-top: 10px;
 	z-index: 9;
 	line-height: 1.5;
+	
 }
 #header #logo img {
-	max-height: 36px
+	max-height: 120px !important;
 }
 
 #logo .logo-light {
@@ -775,7 +776,7 @@ body.tt-m-menu-open #header.header-show-hide-on-scroll { /* disable hide/show he
 		margin-top: 15px !important;
 	}
 	#header #logo img {
-		max-height: 32px !important;
+		max-height: 64px;
 	}
 
 	#logo .logo-dark {
@@ -1105,7 +1106,7 @@ body.tt-ol-menu-open .tt-ol-menu-body-cover {
 	position: relative;
 	display: inline-block;
 	text-decoration: none;
-	font-family: 'Zector',serif;
+	font-family: 'Alumni Sans Pinstripe', sans-serif;
 	font-size: 36px;
 	font-weight: bold;
 	font-weight: 700;
@@ -1352,8 +1353,8 @@ body.tt-ol-menu-open .tt-ol-menu-body-cover {
 	line-height: 50px;
 	padding: 0;
 	margin-left: 10px;
-	font-family: 'Playfair Display',serif;
-	font-size: 18px;
+	font-family: 'Alumni Sans Pinstripe', sans-serif;
+	font-size: 30px;
 	font-weight: 700;
 	color: #111;
 	z-index: 1;
@@ -1878,7 +1879,7 @@ body.tt-ol-menu-open .tt-ol-menu-body-cover {
 }
 .tt-hero-slider .hesl-caption-title {
 	margin: 0;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Alumni Sans Pinstripe', sans-serif;
 	font-size: 34px;
 	font-weight: 700;
 	font-style: italic;

@@ -27,3 +27,8 @@
     font-size: 26px !important;
 }
 
+#header #logo .logo-sphere img {
+    max-height: 120px !important;
+    height: auto !important;
+    width: auto !important;
+}
