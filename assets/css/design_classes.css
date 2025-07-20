@@ -47,7 +47,19 @@
     width: auto;
 }
 
+/* Исправление прозрачности заголовка для единообразия */
+.page-header-caption.ph-cap-light .page-header-title {
+    color: rgba(255,255,255,0.6) !important;
+}
+
+.page-header-caption.ph-cap-light .page-header-subtitle {
+    color: rgba(255,255,255,0.6) !important;
+}
+
 .animsition-loading {
 	width: 200px;
 	height: 200px;
+}
+.portfolio-grid-item::before {
+    background-color: transparent;
 }
