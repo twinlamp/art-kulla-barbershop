@@ -47,13 +47,22 @@
     width: auto;
 }
 
-/* Исправление прозрачности заголовка для единообразия */
+/* Исправление прозрачности заголовка для единообразия (services-men.html) */
 .page-header-caption.ph-cap-light .page-header-title {
     color: rgba(255,255,255,0.6) !important;
 }
 
 .page-header-caption.ph-cap-light .page-header-subtitle {
-    color: rgba(255,255,255,0.6) !important;
+    color: rgba(255,255,255,0.7) !important;
+}
+
+/* Стилизация выделенного текста на services-men.html*/
+.text-center.font-xxlg.font-alter.font-500 {
+    color: #000000 !important;
+    font-family: 'Alumni Sans Pinstripe', sans-serif !important;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .animsition-loading {
@@ -62,4 +71,12 @@
 }
 .portfolio-grid-item::before {
     background-color: transparent;
+}
+
+.split-box-content-inner {
+    font-size: 30px;
+}
+
+.tt-heading-title {
+    font-size: 50px;
 }
