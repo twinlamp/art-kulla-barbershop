@@ -80,3 +80,10 @@
 .tt-heading-title {
     font-size: 50px;
 }
+
+.tt-heading-subtitle {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+}
