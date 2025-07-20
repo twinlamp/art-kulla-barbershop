@@ -27,10 +27,24 @@
     font-size: 26px !important;
 }
 
+/* Скрытие логотипа при скролле */
+#header.header-show-hide-on-scroll.fly-up #logo {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Показ логотипа при возврате header */
+#header.header-show-hide-on-scroll:not(.fly-up) #logo {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Увеличенный размер логотипа */
 #header #logo .logo-sphere img {
-    max-height: 120px !important;
-    height: auto !important;
-    width: auto !important;
+    max-height: 150px !important;
+    width: auto;
 }
 
 .animsition-loading {
