@@ -4771,6 +4771,19 @@ img.pgi-image {
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
 }
+.split-box-image.pgi-image-zoom:hover {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+	z-index: 2;
+}
+.split-box-image.pgi-image-zoom {
+	transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
 
 
 /* Portfolio grid item caption 
