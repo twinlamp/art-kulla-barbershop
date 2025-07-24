@@ -88,3 +88,122 @@
     color: #000000;
 }
 
+/* Фикс для tt-gallery: корректное позиционирование и масштабирование изображений */
+.tt-gallery-image.bg-image {
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.tt-gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Отключить иконку-глаз при наведении в tt-gallery */
+.tt-gallery .tt-gallery-image-icon {
+    display: none !important;
+    pointer-events: none !important;
+}
+
+/* Прямоугольная форма для элементов галереи */
+.tt-gallery .isotope-item.iso-height-1 > div,
+.tt-gallery .isotope-item.iso-height-1 > a,
+.tt-gallery .isotope-item.iso-height-1 > article,
+.tt-gallery .isotope-item.iso-height-1 > figure {
+    aspect-ratio: 3/4;
+    padding-bottom: 0 !important;
+    height: auto;
+    min-height: 0;
+}
+/* высота контейнера для текста  и кнопки*/
+.isotope-item.iso-height-1 > .tt-gallery-item-content {
+  padding-bottom: 0 !important;
+  height: auto;
+  max-height: 130px;
+}
+
+.tt-gallery-item-content {
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: left; 
+}
+.tt-gallery-item-content-inner {
+  padding-bottom: 0 !important;
+  height: auto;
+  max-height: 130px;
+}
+
+.tt-gallery-item-heading {
+  font-size: 40px;
+}
+
+.tt-gallery-item-description {
+  font-size: 28px;
+}
+
+.tt-gallery-item-price {
+  font-size: 32px;
+}
+
+.tt-gallery-item-content-bottom {
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: left;
+  max-height: 180px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: transparent;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .tt-gallery-item-heading {
+    font-size: 28px;
+  }
+  .tt-gallery-item-description {
+    font-size: 20px;
+  }
+  .tt-gallery-item-price {
+    font-size: 22px;
+  }
+  .tt-gallery-item-content-bottom {
+    padding: 12px 8px 10px 8px;
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tt-gallery-item-heading {
+    font-size: 22px;
+  }
+  .tt-gallery-item-description {
+    font-size: 16px;
+  }
+  .tt-gallery-item-price {
+    font-size: 18px;
+  }
+  .tt-gallery-item-content-bottom {
+    padding: 8px 4px 8px 4px;
+    font-size: 0.92rem;
+  }
+}
+
+
+
