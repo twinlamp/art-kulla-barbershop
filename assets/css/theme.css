@@ -42,6 +42,23 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+	font-family: 'Involve';
+	src: url('assets/vendor/fontawesome/webfonts/Involve-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+  }
+  body, .font-involve {
+	font-family: 'Involve', 'Alumni Sans Pinstripe', Arial, sans-serif;
+  }
+  @font-face {
+	font-family: 'Involve';
+	src: url('assets/vendor/fontawesome/webfonts/Involve-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+  }
 
 /* Класс для явного применения Zector */
 .font-zector {

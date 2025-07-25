@@ -122,7 +122,12 @@
 .isotope-item.iso-height-1 > .tt-gallery-item-content {
   padding-bottom: 0 !important;
   height: auto;
-  max-height: 130px;
+  max-height: 200px;
+}
+@media (max-width: 1200px) {
+  .isotope-item.iso-height-1 > .tt-gallery-item-content {
+    max-height: 130px;
+  }
 }
 
 .tt-gallery-item-content {
@@ -162,18 +167,18 @@
   font-weight: 700;
   display: flex;
   flex-direction: column;
+  line-height: 0.9;
   align-items: center;
   justify-content: center; 
   text-align: left;
   max-height: 180px;
   background: #fff;
-  border-radius: 12px;
   box-shadow: transparent;
   width: 100%;
   overflow: hidden;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .tt-gallery-item-heading {
     font-size: 28px;
   }
