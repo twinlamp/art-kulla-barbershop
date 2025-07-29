@@ -50,6 +50,7 @@
 		<link rel="stylesheet" href="assets/css/helper.css">
 		<link rel="stylesheet" href="assets/css/theme.css">
 		<link rel="stylesheet" href="assets/css/design_classes.css">
+
 	</head>
 
 	
@@ -83,7 +84,7 @@
 				* Use class "header-transparent-dark" to enable transparent dark header (use it for light background). Note: class "header-transparent" is required!
 				* Use class "header-alt" to enable header alternative style.
 				-->
-				<header id="header" class="header-alt header-show-hide-on-scroll header-transparent header-transparent-dark">
+				<header id="header" class="header-alt header-show-hide-on-scroll header-transparent">
 
 					<!-- Begin header inner -->
 					<div class="header-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes can be found in the file "helper.css". -->
@@ -92,12 +93,12 @@
 						================ -->
 						<div id="logo">
 							<!-- logo images for big screens -->
-							<a href="index.html" class="logo-sphere"><img src="assets/img/logo-sphere.png" alt="logo"></a>
-							<a href="index.html" class="logo-light"><img src="assets/img/logo-light.png" alt="logo"></a>
+							<a href="index.html" class="logo-dark"><img src="assets/img/logo-sphere.png" alt="logo"></a>
+							<a href="index.html" class="logo-light"><img src="assets/img/logo-sphere.png" alt="logo"></a>
 
 							<!-- logo images for smaller screens -->
-							
-							<a href="index.html" class="logo-light-m"><img src="assets/img/logo-light-m.png" alt="logo"></a>
+							<a href="index.html" class="logo-dark-m"><img src="assets/img/logo-sphere.png" alt="logo"></a>
+							<a href="index.html" class="logo-light-m"><img src="assets/img/logo-sphere.png" alt="logo"></a>
 						</div>
 						<!-- End logo -->
 
@@ -165,7 +166,7 @@
 											<!-- <li><a href="index.html">Link</a></li> -->
 											
 											<li class="no-children">
-												<a href="#0">Главная</a> 
+												<a href="index.html">Главная</a> 
 												<ul class="tt-ol-sub-menu">
 												</ul>
 											</li>
@@ -205,8 +206,8 @@
 
 								</div>
 								<!-- End overlay menu content -->
+								<!-- End overlay menu content -->
 
-								<!-- Begin overlay menu footer -->
 								<div class="tt-ol-menu-footer">
 									<div class="row">
 										<div class="col-left col-sm-6">
@@ -254,6 +255,7 @@
 
 				</header>
 				<!-- End header -->
+				<!-- End header -->
 
 
 				<!-- ========================
@@ -264,8 +266,7 @@
 				* Use class "ph-center" or "ph-right" to align page header caption.
 				* Use class "bg-dark", "bg-gray-3" or "bg-main" to set page header background color. More info about prepared background classes can be found in the file "helper.css".
 				-->
-				<div id="page-header" class="ph-almost-full bg-green">
-					<div class="page-header-image tt-move-bg parallax-8 bg-image" style="background-image: url(assets/img/background-main-3.jpg); background-position: 50% 50%;"></div>
+				<div id="page-header" class="ph-almost-full ph-almost-full-m">
 
 					<!-- Begin page header image 
 					============================= 
@@ -274,7 +275,7 @@
 					* You can change the "background-position" as needed (depends on your image).
 					* Use class "tt-move-bg" to enable background moving effect.
 					-->
-					<!-- <div class="page-header-image tt-move-bg parallax-6 bg-image" style="background-image: url(assets/img/page-header/page-header-2.jpg); background-position: 50% 50%;"></div> -->
+					<div class="page-header-image parallax-6 tt-move-bg bg-image" style="background-image: url(assets/img/background-main-3.jpg); background-position: 50% 50%;"></div>
 					<!-- End page header image -->
 
 					<!-- Begin page header inner -->
@@ -288,19 +289,18 @@
 						* Use class "parallax-1" up to "parallax-6" to enable parallax effect (use class "no-parallax-m" to disable on mobile devices).
 						* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scrolls (use class "no-fade-out-scroll-m" to disable on mobile devices).
 						-->
-						<div class="page-header-caption ph-cap-lg parallax-5">
+						<div class="page-header-caption parallax-5">
 
 							<!-- Use helper class "max-width-*" if needed. For example: "max-width-900". More info about helper classes can be found in the file "helper.css". -->
-							<div class="d-flex flex-column align-items-center justify-content-center custom-header-center">
-								<div class="ph-title-wrap max-width-1600">
-									<h1 class="page-header-title">
-										<span class="d-block w-100 text-center">Дреды</span>
-										<span class="d-block w-100 text-center">Стрижки</span>
-										<span class="d-block w-100 text-center">Бали</span>
-									</h1>
-								</div>
-								<a href="#0" class="btn btn-light btn-lg padding-left-50 padding-right-50 font-size-30" role="button" data-bs-toggle="modal" data-bs-target="#bookingModal">МЫ ЖДЕМ ТЕБЯ</a>
+							<div class="ph-title-wrap max-width-900">
+								<h1 class="page-header-title">Наши контакты</h1>
 							</div>
+
+							<!-- Use helper class "max-width-*" if needed. For example: "max-width-900". More info about helper classes can be found in the file "helper.css". -->
+							<div class="ph-subtitle-wrap max-width-900">
+								<h2 class="page-header-subtitle">Даже в густых джунглях нас просто найти</h2>
+							</div>
+
 							<!-- Page header caption divider -->
 							<div class="ph-caption-divider"></div>
 
@@ -322,7 +322,7 @@
 							<!-- End page header description -->
 
 							<!-- <div><a href="" class="btn btn-dark btn-sm margin-top-30">Explore More</a></div> -->
-							<!-- <a href="#0" class="btn btn-light btn-lg" role="button">ПРЕОБРАЗИСЬ</a> -->
+
 						</div>
 						<!-- End page header caption -->
 
@@ -354,180 +354,56 @@
 					============================ 
 					* Use padding classes if needed. For example "no-padding", "no-padding-top", "no-padding-bottom", etc. More info about helper classes can be found in the file "helper.css".
 					-->
-					<div class="tt-section no-padding">
+					<div class="tt-section no-padding bg-dark text-white">
 						<div class="tt-section-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes can be found in the file "helper.css". -->
 
-							<!-- Begin portfolio grid
-							==========================
-							* Use class "pgi-cover-dark" or "pgi-cover-color" to change item cover style.
-							* Use class "pgi-image-zoom" to enable image zoom effect on hover.
-							* Use class "pgi-caption-top" to enable caption position top.
-							* Use class "pgi-caption-bottom" to enable caption position bottom.
-							* Note: Remove position class to enable caption default position.
-							-->
-							<div class="portfolio-grid pgi-cover-dark pgi-image-zoom">
+							<!-- Begin split box
+							===================== -->
+							<div class="split-box">
+								<div class="row g-0">
 
-								<!-- Begin isotope
-								===================
-								* Use class "iso-gutter-1", "iso-gutter-2", "iso-gutter-3", "iso-gutter-4", "iso-gutter-5" or "iso-gutter-6" to add more space between items.
-								* Use class "iso-col-1", "iso-col-2", "iso-col-3" or "iso-col-4" for columns.
-								-->
-								<div class="isotope iso-col-2">
-
-									<!-- Begin isotope items wrap -->
-									<div class="isotope-items-wrap">
-
-										<!-- Grid sizer (do not remove!!!) -->
-										<div class="grid-sizer"></div>
-
-
-										<!-- ===================== 
-										/// Begin isotope item ///
-										========================== 
-										* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-										-->
-										<div class="isotope-item branding print iso-height-1">
-
-											<!-- Begin portfolio grid item 
-											=============================== -->
-											<a href="portfolio-single-1.html" class="portfolio-grid-item">
-
-												<!-- Portfolio grid item image -->
-												<div class="pgi-image bg-image lazy" data-src="assets/img/portfolio/grid/grid-1.jpg"></div>
-
-												
-												<!-- End portfolio grid item caption -->
-											</a>
-											<!-- End portfolio grid item -->
-
-										</div>
-										<!-- End isotope item -->
-
-										<!-- ===================== 
-										/// Begin isotope item ///
-										========================== 
-										* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-										-->
-										<div class="isotope-item branding digital iso-height-1">
-
-											<!-- Begin portfolio grid item 
-											=============================== -->
-											<a href="portfolio-single-2.html" class="portfolio-grid-item">
-
-												<!-- Portfolio grid item image -->
-												<div class="pgi-image bg-image lazy" data-src="assets/img/portfolio/grid/grid-2.jpg"></div>
-
-												
-											</a>
-											<!-- End portfolio grid item -->
-
-										</div>
-										<!-- End isotope item -->
-
-										<!-- ===================== 
-										/// Begin isotope item ///
-										========================== 
-										* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-										-->
-										<div class="isotope-item print iso-height-1">
-
-											<!-- Begin portfolio grid item 
-											=============================== -->
-											<a href="portfolio-single-3.html" class="portfolio-grid-item">
-
-												<!-- Portfolio grid item image -->
-												<div class="pgi-image bg-image lazy" data-src="assets/img/portfolio/grid/grid-3.jpg"></div>
-
-												
-											</a>
-											<!-- End portfolio grid item -->
-
-										</div>
-										<!-- End isotope item -->
-
-										<!-- ===================== 
-										/// Begin isotope item ///
-										========================== 
-										* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-										-->
-										<div class="isotope-item digital iso-height-1">
-
-											<!-- Begin portfolio grid item 
-											=============================== -->
-											<a href="portfolio-single-4.html" class="portfolio-grid-item">
-
-												<!-- Portfolio grid item image -->
-												<div class="pgi-image bg-image lazy" data-src="assets/img/portfolio/grid/grid-4.jpg"></div>
-
-												
-											</a>
-											<!-- End portfolio grid item -->
-
-										</div>
-										<!-- End isotope item -->
-
-										<!-- ===================== 
-										/// Begin isotope item ///
-										========================== 
-										* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-										-->
-										<div class="isotope-item print iso-height-1">
-
-											<!-- Begin portfolio grid item 
-											=============================== -->
-											<a href="portfolio-single-5.html" class="portfolio-grid-item">
-
-												<!-- Portfolio grid item image -->
-												<div class="pgi-image bg-image lazy" data-src="assets/img/portfolio/grid/grid-5.jpg"></div>
-
-												
-											</a>
-											<!-- End portfolio grid item -->
-
-										</div>
-										<!-- End isotope item -->
-
-										<!-- ===================== 
-										/// Begin isotope item ///
-										========================== 
-										* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-										-->
-										<div class="isotope-item branding print iso-height-1">
-
-											<!-- Begin portfolio grid item 
-											=============================== -->
-											<a href="portfolio-single-6.html" class="portfolio-grid-item">
-
-												<!-- Portfolio grid item image -->
-												<div class="pgi-image bg-image lazy" data-src="assets/img/portfolio/grid/grid-6.jpg"></div>
-
-												
-											</a>
-											<!-- End portfolio grid item -->
-
-										</div>
-										<!-- End isotope item -->
-
-									</div>
-									<!-- End isotope items wrap -->
-
-
-									<!-- Begin isotope pagination (Note: "Load More" button is for design purposes only!)
-									============================== 
-									* Uese class "ilm-filled" to enable load more with background color. 
+									<!-- Column (Google Maps) 
+									==============================
+									* Interactive Google Maps showing the location of Art Kulla Barbershop
 									-->
-									<!-- <div class="iso-load-more-wrap ilm-filled">
-										<div class="iso-load-more">
-											<a href="" class="iso-load-more-button">Show More</a>
+									<div class="split-box-image col-lg-6">
+										
+										<!-- Google Maps container -->
+										<div id="map" style="width: 100%; height: 100%; min-height: 500px;"></div>
+
+									</div> <!-- /.col -->
+
+									<!-- Column (Split box content) 
+									================================ -->
+									<div class="split-box-content col-lg-6 align-self-center pgi-image-zoom" style="background-image: url(assets/img/services-men/sea.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+										
+										
+										<!-- Begin split box content inner -->
+										<div class="split-box-content-inner">
+
+											<div class="font-size-23">
+												<p>Jl. Blong Keker, Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80361, Indonesia</p>
+												<p>+62 812-3456-7890</p>
+												<p><a href="mailto:info@artkulla.com" target="_blank" style="color: #000000 !important;">info@artkulla.com</a></p>
+											</div>
+
+											<!-- Begin social buttons -->
+											<div class="social-buttons margin-top-40">
+												<ul>
+													<li><a href="https://www.youtube.com/@artkulla" class="btn btn-rounded-full btn-social-min btn-dark" title="Мы на YouTube" target="_blank"><i class="fab fa-youtube"></i></a></li>
+													<li><a href="#" class="btn btn-rounded-full btn-social-min btn-dark" title="Мы в Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+													<li><a href="https://vk.com/artkulla_dreads" class="btn btn-rounded-full btn-social-min btn-dark" title="Мы в VK" target="_blank"><i class="fab fa-vk"></i></a></li>
+												</ul>
+											</div>
+											<!-- End social buttons -->
+
 										</div>
-									</div> -->
-									<!-- End isotope pagination -->
+										<!-- End split box content inner -->
 
-								</div>
-								<!-- End isotope -->
-
+									</div> <!-- /.col -->
+								</div> <!-- /.row -->
 							</div>
-							<!-- End portfolio grid -->
+							<!-- End split box -->
 
 						</div> <!-- /.tt-section-inner -->
 					</div>
@@ -556,12 +432,12 @@
 					<div class="footer-block">
 						<div class="f-block-logo">
 							<!-- logo images for big screens -->
-							<a href="index.html" class="footer-logo logo-sphere"><img src="assets/img/logo-sphere.png" alt="logo"></a>
-							<a href="index.html" class="footer-logo logo-light"><img src="assets/img/logo-light.png" alt="logo"></a>
+							<a href="index.html" class="footer-logo logo-dark"><img src="assets/img/logo-sphere.png" alt="logo"></a>
+							<a href="index.html" class="footer-logo logo-light"><img src="assets/img/logo-sphere.png" alt="logo"></a>
 
 							<!-- logo images for smaller screens -->
-							
-							<a href="index.html" class="footer-logo logo-light-m"><img src="assets/img/logo-light-m.png" alt="logo"></a>
+							<a href="index.html" class="footer-logo logo-dark-m"><img src="assets/img/logo-sphere.png" alt="logo"></a>
+							<a href="index.html" class="footer-logo logo-light-m"><img src="assets/img/logo-sphere.png" alt="logo"></a>
 						</div>
 					</div>
 					<!-- End footer block -->
@@ -591,7 +467,7 @@
 								<a href="https://vk.com/artkulla_dreads" class="btn btn-rounded-full btn-social-min btn-link" title="Мы в VK" target="_blank">
 									<span class="btn-social-icon"><i class="fab fa-vk"></i></span>
 								</a>
-								<!-- <li><a href="" class="btn btn-social-min btn-link btn-lg" title="Drop us a line" target="_blank"><i class="fas fa-envelope"></i></a></li> -->
+								<!-- <li><a href="" class="btn btn-light btn-social-min btn-link" title="Drop us a line" target="_blank"><i class="fas fa-envelope"></i></a></li> -->
 							</ul>
 						</div> <!-- /.social-buttons -->
 					</div>
@@ -646,6 +522,10 @@
 		<script src="assets/vendor/sticky-sidebar/js/resizesensor.min.js"></script> <!-- Sticky sidebar JS: (https://github.com/WeCodePixels/theia-sticky-sidebar) -->
 		<script src="assets/vendor/sticky-sidebar/js/theia-sticky-sidebar.min.js"></script> <!-- Sticky sidebar JS: (https://github.com/WeCodePixels/theia-sticky-sidebar) -->
 
+		<!-- Google maps JS (https://developers.google.com/maps/documentation/javascript/tutorial). IMPORTANT: use it for pages with Google map only!!! -->
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo5b533IB2iuDcTn2razvfjyc_rpZdiRw&callback=initMap"></script> 
+		<script src="assets/vendor/map.js"></script> 
+
 		<!-- Theme master JS -->
 		<script src="assets/js/theme.js"></script>
 
@@ -654,19 +534,3 @@
 	</body>
 
 </html>
-
-<!-- Modal: Online Booking -->
-<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-4" id="bookingModalLabel">Выбери удобное время</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-      </div>
-      <div class="modal-body p-0">
-        <div class="embedded-booking w-100" data-url="https://artkulla.trafft.com" data-query="&t=s&uuid=4f1b7d6d-5926-435e-8976-e920e8b0f051" data-lang="ru" data-autoresize="1" data-showsidebar="1"></div>
-      </div>
-    </div>
-  </div>
-</div>
-<script type="text/javascript" src="https://artkulla.trafft.com/embed.js" async></script>

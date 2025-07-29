@@ -179,21 +179,21 @@ function initMap() {
 	// End map style
 
 
-	var myLatlng = new google.maps.LatLng(-37.817251, 144.955891); // Set coordinates.
+	var myLatlng = new google.maps.LatLng(-8.7893, 115.1667); // Coordinates for Art Kulla Barbershop, Bali
 	var mapOptions = {
 		mapTypeControl: true,
 		scrollwheel: false,
 		styles: styleArray, // Apply the map style array to the map.
-		zoom: 14,
+		zoom: 16,
 		center: myLatlng
 	}
-	var map = new google.maps.Map(document.getElementById("tt-map"), mapOptions);
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
 	// Marker image
 	var iconBase = 'assets/img/';
 	var marker = new google.maps.Marker({
 		position: myLatlng,
-		title:"Hello! We Are Here. :)",
+		title:"Art Kulla Barbershop - Лучший дред-салон на Бали",
 		icon: iconBase + 'map-marker.png'
 	});
 
