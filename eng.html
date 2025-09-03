@@ -92,12 +92,12 @@
 						================ -->
 						<div id="logo">
 							<!-- logo images for big screens -->
-							<a href="index_eng.html" class="logo-sphere"><img src="assets/img/logo-sphere.png" alt="logo"></a>
-							<a href="index_eng.html" class="logo-light"><img src="assets/img/logo-light.png" alt="logo"></a>
+							<a href="eng.html" class="logo-sphere"><img src="assets/img/logo-sphere.png" alt="logo"></a>
+							<a href="eng.html" class="logo-light"><img src="assets/img/logo-light.png" alt="logo"></a>
 
 							<!-- logo images for smaller screens -->
 							
-							<a href="index_eng.html" class="logo-light-m"><img src="assets/img/logo-light-m.png" alt="logo"></a>
+							<a href="eng.html" class="logo-light-m"><img src="assets/img/logo-light-m.png" alt="logo"></a>
 						</div>
 						<!-- End logo -->
 
@@ -166,7 +166,7 @@
 										<ul class="tt-ol-menu-list">
 
 											<!-- Menu link without sub menu (just an example) -->
-											<!-- <li><a href="index_eng.html">Link</a></li> -->
+											<!-- <li><a href="eng.html">Link</a></li> -->
 											
 											<li class="no-children">
 											<a href="#0">Home</a> 
@@ -551,12 +551,12 @@
 					<div class="footer-block">
 						<div class="f-block-logo">
 							<!-- logo images for big screens -->
-							<a href="index_eng.html" class="footer-logo logo-sphere"><img src="assets/img/logo-sphere.png" alt="logo"></a>
-							<a href="index_eng.html" class="footer-logo logo-light"><img src="assets/img/logo-light.png" alt="logo"></a>
+							<a href="eng.html" class="footer-logo logo-sphere"><img src="assets/img/logo-sphere.png" alt="logo"></a>
+							<a href="eng.html" class="footer-logo logo-light"><img src="assets/img/logo-light.png" alt="logo"></a>
 
 							<!-- logo images for smaller screens -->
 							
-							<a href="index_eng.html" class="footer-logo logo-light-m"><img src="assets/img/logo-light-m.png" alt="logo"></a>
+							<a href="eng.html" class="footer-logo logo-light-m"><img src="assets/img/logo-light-m.png" alt="logo"></a>
 						</div>
 					</div>
 					<!-- End footer block -->
@@ -648,7 +648,7 @@
 		// Context7 language switcher logic
 		// Detect current language by URL
 		function getCurrentLang() {
-			if (window.location.pathname.indexOf('index_eng.html') !== -1) return 'en';
+			if (window.location.pathname.indexOf('eng.html') !== -1) return 'en';
 			return 'ru';
 		}
 		function setLangUI(lang) {
@@ -668,21 +668,10 @@
 		}
 		function switchLang() {
 			var current = getCurrentLang();
-			var base = window.location.origin + window.location.pathname;
 			if (current === 'ru') {
-				if (base.indexOf('index_eng.html') !== -1) return;
-				if (base.endsWith('/') || base.endsWith('index.html')) {
-					window.location.href = window.location.origin + '/index_eng.html';
-				} else {
-					window.location.href = base.replace('index.html', 'index_eng.html');
-				}
+				window.location.href = window.location.pathname.replace('index.html', 'eng.html');
 			} else {
-				if (base.indexOf('index.html') !== -1) return;
-				if (base.endsWith('/') || base.endsWith('index_eng.html')) {
-					window.location.href = window.location.origin + '/index.html';
-				} else {
-					window.location.href = base.replace('index_eng.html', 'index.html');
-				}
+				window.location.href = window.location.pathname.replace('eng.html', 'index.html');
 			}
 		}
 		document.addEventListener('DOMContentLoaded', function() {

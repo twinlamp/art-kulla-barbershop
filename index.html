@@ -648,7 +648,7 @@
 		// Context7 language switcher logic
 		// Detect current language by URL
 		function getCurrentLang() {
-			if (window.location.pathname.indexOf('index_eng.html') !== -1) return 'en';
+			if (window.location.pathname.indexOf('eng.html') !== -1) return 'en';
 			return 'ru';
 		}
 		function setLangUI(lang) {
@@ -668,21 +668,10 @@
 		}
 		function switchLang() {
 			var current = getCurrentLang();
-			var base = window.location.origin + window.location.pathname;
 			if (current === 'ru') {
-				if (base.indexOf('index_eng.html') !== -1) return;
-				if (base.endsWith('/') || base.endsWith('index.html')) {
-					window.location.href = window.location.origin + '/index_eng.html';
-				} else {
-					window.location.href = base.replace('index.html', 'index_eng.html');
-				}
+				window.location.href = window.location.pathname.replace('index.html', 'eng.html');
 			} else {
-				if (base.indexOf('index.html') !== -1) return;
-				if (base.endsWith('/') || base.endsWith('index_eng.html')) {
-					window.location.href = window.location.origin + '/index.html';
-				} else {
-					window.location.href = base.replace('index_eng.html', 'index.html');
-				}
+				window.location.href = window.location.pathname.replace('eng.html', 'index.html');
 			}
 		}
 		document.addEventListener('DOMContentLoaded', function() {
